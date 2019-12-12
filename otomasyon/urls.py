@@ -15,8 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.conf.urls import url
-from otoparkotomasyon.views import home
+from otoparkotomasyon.views import home,exit
 urlpatterns = [
     url('admin/', admin.site.urls),
     url('',view=home,name="home"),
+    url('exit/' , view = exit, name = "exit"),
 ]
